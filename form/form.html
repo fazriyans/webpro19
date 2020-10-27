@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STUDENT REGISTRATION FORM</title>
+        <style>
+            label{font-size: 17px;}
+            h1{font-size: 25px;}
+        </style>
+    </head>
+    <body>
+        <form action="proses.php" method="POST"></form>
+        <fieldset style="background-color: rgb(30, 212, 197);">
+            <legend style="font-size: 37px;"><b>REGISTRASI FORM</b></legend>
+            <div align="right">
+                <label for="tanggal">DATE</label>
+                <div align="right">
+                    <input type="date" name="TANGGAL" id="TANGGAL" value="2020-10-26" size="33" placeholder="TANGGAL">
+                </div>
+            </div>
+            <h1>PERSONAL INFORMATION</h1>
+        <hr size="5" color="WHITE">
+            <div>
+                <label style="width: 170px; margin-top: 7px; display: inline-block; padding: 8px;" for="nama">NAME</label>
+                <input style="height:17px; width: 250px; padding: 7px;" id="nama" type="text" autofocus="true" required name="nama" value="" size="30" placeholder="FAZRIYANSAH AHMAD">
+                <div>
+                <label style="width: 170px; margin-top: 7px; display: inline-block; padding: 8px;" for="TTL">DATE OF BIRTH</label>
+                <input style="height:17px; width: 250px; padding: 7px;" id="TTL" type="number" autofocus="true" required name="TTL" value="" size="30" placeholder="16-05-2000">
+                </div>
+            </div>
+            <br/>
+            <h1>CONTACT INFORMATION</h1>
+        <hr size="5" color="WHITE">
+            <div>
+                <div>
+                <label style="width: 170px; margin-top: 7px; display: inline-block; padding: 8px;" for="alamat">ADDRESS</label>
+                <input style="height:17px; width: 250px; padding: 7px;" id="alamat" type="text" autofocus="true" required name="alamat" value="" size="27" placeholder="Jl.SUDIRMAN">
+                </div>
+                <div>
+                <label style="width: 170px; margin-top: 7px; display: inline-block; padding: 8px;" for="kota">CITY</label>
+                <input style="height:17px; width: 250px; padding: 7px;" id="kota" type="text" autofocus="true" required name="kota" value="" size="27" placeholder="JAKARTA">
+                </div>
+                <div>
+                <label style="width: 170px; margin-top: 7px; display: inline-block; padding: 8px;" for="negara">COUNTRY</label>
+                <input style="height:17px; width: 250px; padding: 7px;" id="negara" type="text" autofocus="true" required name="negara" value="" size="27" placeholder="INDONESIA">
+                </div>
+                <div>
+                <label style="width: 170px; margin-top: 7px; display: inline-block; padding: 8px;" for="kabupaten">PROVINSI</label>
+                <input style="height:17px; width: 250px; padding: 7px;" id="kabupaten" type="text" autofocus="true" required name="kabupaten" value="" size="27" placeholder="SUMATRA UTARA">
+                </div>
+                <div>
+                <label style="width: 170px; margin-top: 7px; display: inline-block; padding: 8px;" for="zip">ZIP CODE</label>
+                <input style="height:17px; width: 250px; padding: 7px;" id="zip" type="number" autofocus="true" required name="zip" value="" size="27" placeholder="1122">
+                </div>
+                <div>
+                <label style="width: 170px; margin-top: 7px; display: inline-block; padding: 8px;" for="email">EMAIL</label>
+                <input style="height:17px; width: 250px; padding: 7px;" id="email" type="email" autofocus="true" required name="email" value="" size="27" placeholder="EXAMPLE@GMAIL.COM">
+                </div>
+                <div>
+                <label style="width: 170px; margin-top: 7px; display: inline-block; padding: 8px;" for="hp">PHONE</label>
+                <input style="height:17px; width: 250px; padding: 7px;" id="hp" type="number" autofocus="true" required name="hp" value="" size="27" placeholder="+6289638041510">
+                </div>
+                <div>
+                <label style="width: 170px; margin-top: 7px; display: inline-block; padding: 0px;">MEMBERSHIP TYPE</label>
+                <label><input type="radio" name="member" value="Regular">REGULAR</label>
+                <label><input type="radio" name="member" value="Premium">PREMIUM</label>
+                <label><input type="radio" name="member" value="VIP">VIP</label>
+                </div>
+            </div>
+            <br/>
+            <h1>COURSE INFORMATION</h1>
+        <hr size="5" color="WHITE">
+            <div>
+                <div>
+                <label style="width: 170px; margin-top: 5px; display: inline-block; padding: 8px;" for="course">COURSE NAME</label>
+                <input style="height:15px; width: 220px; padding: 5px;" id="course" type="text" autofocus="true" required name="course" value="" size="30" placeholder="ILMU PENGETAHUAN">
+                </div>
+                <div>
+                    <label style="width: 170px; margin-top: 5px; display: inline-block; padding: 8px;">PAYMENT DETAILS</label>
+                    <label><input type="radio" name="payment" value="Cash">CASH</label>
+                    <label><input type="radio" name="payment" value="Cheque">CHEQUE</label>
+                    <label><input type="radio" name="payment" value="Credit Card">CREDIT CARD</label>
+                </div>
+                <div>
+                <label for="komen"><p style="width: 170px; display: inline-block; padding: 3px;">COMMENT</p></label>
+                <textarea name="komen" rows="4" cols="30"></textarea>
+                </div>
+            </div>
+            <p>
+                <input type="SUBMIT" name="SUBMIT" value="SUBMIT">
+            </p>
+        </fieldset>
+    </body>
+</html>
