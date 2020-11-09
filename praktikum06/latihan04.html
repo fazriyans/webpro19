@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <script>
+            function penjumlahan(){
+                let bil1_html = document.getElementById("bil1").value;
+                let bil2_html = document.getElementById("bil2").value;
+
+                console.log(bil1_html+bil2_html);
+                let bil1 = parseInt(bil1_html);
+                let bil2 = parseInt(bil2_html);
+
+                console.log(bil1+bil2);
+                let hasil = bil1+bil2;
+
+                document.getElementById("hasil_penjumlahan").innerHTML = hasil;
+            }
+
+            function pengurangan(){
+                let bil1_html = document.getElementById("bil1").value;
+                let bil2_html = document.getElementById("bil2").value;
+
+                console.log(bil1_html-bil2_html);
+                let bil1 = parseInt(bil1_html);
+                let bil2 = parseInt(bil2_html);
+
+                console.log(bil1-bil2);
+                let hasil = bil1-bil2;
+
+                document.getElementById("hasil_pengurangan").innerHTML = hasil;
+            }
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewimport" content="width=device-width, initial-scale=1,0">
+        <title>Penjumlahan sederhana</title>
+    </head>
+    <body>
+        <form action="">
+            Bilangan 1: <input type="text" id="bil1"/>
+            Bilangan 2: <input type="text" id="bil2"/>
+            <input type="button" value="penjumlahan" onclick="penjumlahan()">
+            <input type="button" value="pengurangan" onclick="pengurangan()">
+            <h1 id="hasil_penjumlahan"></h1>
+            <h1 id="hasil_pengurangan"></h1>
+        </form>
+    </body>
+</html>
