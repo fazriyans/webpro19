@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image Picker</title>
+	<script language="JavaScript">
+	
+	
+
+	function tukar(){
+	let hewans = document.getElementById("hewan").value;
+	
+	if (hewans == "anjing"){
+	document.getElementById("gambar").src = "gambar/anjing.jpg";
+	} else if (hewans == "burung"){
+	document.getElementById("gambar").src = "gambar/burung.jpg";
+	} else if (hewans == "jerapah"){
+	document.getElementById("gambar").src = "gambar/jerapah.jpg";
+	} else if (hewans == "kambing"){
+	document.getElementById("gambar").src = "gambar/kambing.jpg";
+	} else if (hewans == "kucing"){
+	document.getElementById("gambar").src = "gambar/kucing.jpg";
+	} else if (hewans == "monyet"){
+    document.getElementById("gambar").src = "gambar/monyet.png";
+    } else if (hewans == "sapi"){
+    document.getElementById("gambar").src = "gambar/sapi.png";
+    } else if (hewans == "unta"){
+	document.getElementById("gambar").src = "gambar/unta.jpg";
+	} else {
+	document.getElementById("gambar").src = " ";
+	}
+	
+  	}
+
+	</script>
+	
+</head>
+<body>
+	<h2>Image Picker</h2>
+	<form>
+		
+		<select name="nama-hewan" id="hewan" onkeyup="tukar();" onchange="tukar();">
+			<option value="pilih">[Pilih Hewan]</option>
+			<option value="anjing">Anjing</option>
+			<option value="burung">Burung</option>
+			<option value="jerapah">Jerapah</option>
+			<option value="kambing">Kambing</option>
+			<option value="kucing">Kucing</option>
+            <option value="monyet">Monyet</option>
+            <option value="sapi">Sapi</option>
+            <option value="unta">Unta</option>
+		</select>
+		
+		
+	</form>
+	<br />
+	<img id="gambar" src=""/>
+</body>
+</html>
